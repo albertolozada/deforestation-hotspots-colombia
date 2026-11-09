@@ -1,22 +1,18 @@
-# Data: keep only the README and small sample files
-data/*
-!data/README.md
-!data/sample/
-
-# Large rasters and GIS working files
-*.tif
-*.tiff
-*.vrt
-*.zip
-*.qgz~
-*.aux.xml
+# Raw and intermediate data are downloaded or regenerated (see data/README.md)
+data/raw/
+data/interim/
+data/processed/stats_input_*.gpkg
+data/processed/hex5km_amazon_arc.gpkg
+data/processed/hex5km_choco.gpkg
+*.part
+*.progress.json
 
 # Python and Jupyter
 __pycache__/
 *.pyc
+.pytest_cache/
 .ipynb_checkpoints/
 .venv/
-.env
 
 # OS
 .DS_Store
